@@ -8,6 +8,13 @@
     --border-color: #dddddd;
 }
 
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
 body.dark {
     --background-color: #343a40; 
     --text-color: #f8f9fa;
@@ -16,13 +23,6 @@ body.dark {
     --content-color: #212529; 
     --link-color: #17a2b8; 
     --border-color: #444444;
-}
-
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: var(--background-color);
-    color: var(--text-color);
 }
 
 a {
@@ -36,9 +36,9 @@ hr {
 #toggle {
     display: none;
 }
-  
+
 label {
-    display: inline-block;;
+    display: inline-block;
     width: 40px;
     height: 20px;
     background-color: #ccc;
@@ -47,7 +47,7 @@ label {
     cursor: pointer;
     margin-left: 32px;
 }
-  
+
 label::before {
     content: "";
     position: absolute;
@@ -59,11 +59,11 @@ label::before {
     border-radius: 50%;
     transition: transform 0.3s;
 }
-  
+
 #toggle:checked + label {
     background-color: #1ab649;
 }
-  
+
 #toggle:checked + label::before {
     transform: translateX(20px);
 }
@@ -87,7 +87,7 @@ label::before {
 }
 
 .sidebar {
-    background-color: var(--sidebar-color);;
+    background-color: var(--sidebar-color);
     grid-column: 1 / 2;
     grid-row: 2;
 }
@@ -111,11 +111,6 @@ label::before {
     padding: 8px;
     margin: 5px 0;
     box-sizing: border-box;
-}
-
-.sidebar input[type='text'],
-.sidebar input[type='number'] {
-    margin-bottom: 5px;
 }
 
 .sidebar label {
@@ -191,7 +186,7 @@ label::before {
 
 .delete-btn {
     padding: 5px 10px;
-    background-color: #ff6347; 
+    background-color: #ff6347;
     color: white;
     border: none;
     border-radius: 5px;
