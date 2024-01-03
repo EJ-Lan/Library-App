@@ -9,7 +9,7 @@ This Library application is a simple, yet powerful tool for managing a collectio
 
 - **HTML**: Used to structure the library interface.
 - **CSS**: Employed to style the library, enhancing its visual appeal.
-- **JavaScript**: Used tp make the library interactive
+- **JavaScript**: Used to make the library interactive
 
 
 ## Features
