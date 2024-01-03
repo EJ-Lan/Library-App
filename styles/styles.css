@@ -175,3 +175,30 @@ label::before {
     margin-bottom: 5px;
 }
 
+.read-btn {
+    padding: 5px 10px;
+    background-color: var(--link-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px; 
+}
+
+.read-btn:hover {
+    background-color: #1ab649;
+}
+
+.delete-btn {
+    padding: 5px 10px;
+    background-color: #ff6347; /* A red color for the delete button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.delete-btn:hover {
+    background-color: #ff2e00; /* A darker red for the hover state */
+}

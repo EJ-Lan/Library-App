@@ -61,3 +61,33 @@ document.getElementById('addBookForm').addEventListener('submit', function(e) {
 
     this.reset();
 });
+
+function toggleReadStatus(index) {
+    myLibrary[index].read = !myLibrary[index].read;
+    displayBooks(); // Refresh the book display
+}
+
+function displayBooks() {
+    const booksContainer = document.querySelector('.content');
+    booksContainer.innerHTML = ''; // Clear previous content
+
+    myLibrary.forEach((book, index) => {
+        const bookCard = document.createElement('div');
+        bookCard.classList.add('book-card');
+        bookCard.innerHTML = `
+            <div class="book-title">${book.title}</div>
+            <div class="book-author">Author: ${book.author}</div>
+            <div class="book-pages">Pages: ${book.pages}</div>
+            <div class="book-read">Read: ${book.read ? 'Yes' : 'No'}</div>
+            <button onclick="toggleReadStatus(${index})" class="read-btn">${book.read ? 'Mark as Unread' : 'Mark as Read'}</button>
+            <button onclick="deleteBook(${index})" class="delete-btn">Delete</button>
+        `;
+
+        booksContainer.appendChild(bookCard);
+    });
+}
+
+function deleteBook(index) {
+    myLibrary.splice(index, 1); // Removes the book from the array
+    displayBooks(); // Refresh the book display
+}
