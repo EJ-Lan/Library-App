@@ -14,3 +14,7 @@ function addBookToLibrary(book) {
         throw new Error("Argument must be a Book object");
     }
 }
+
+function toggleDarkMode() {
+    document.body.classList.toggle('dark');
+}
