@@ -191,7 +191,7 @@ label::before {
 
 .delete-btn {
     padding: 5px 10px;
-    background-color: #ff6347; /* A red color for the delete button */
+    background-color: #ff6347; 
     color: white;
     border: none;
     border-radius: 5px;
@@ -200,5 +200,5 @@ label::before {
 }
 
 .delete-btn:hover {
-    background-color: #ff2e00; /* A darker red for the hover state */
+    background-color: #ff2e00;
 }
