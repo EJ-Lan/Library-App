@@ -27,5 +27,5 @@ To use the Library-App, follow these steps:
 
 1. **Clone the repository:**
  ```bash
- git clone git@github.com:[Your Username]/Library-App.git
+ git clone git@github.com:EJ-Lan/Library-App.git
  ```
